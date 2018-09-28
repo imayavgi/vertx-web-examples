@@ -56,7 +56,7 @@ public class StaticSiteServer extends AbstractVerticle {
             System.out.println(" Got connection" + conn.localAddress());
         });
 
-        httpServer.requestHandler(router::accept).listen(8080, "0.0.0.0");
+        httpServer.requestHandler(router::accept).listen(8080 );
 
         System.out.println("StaticSiteServer is started");
 
